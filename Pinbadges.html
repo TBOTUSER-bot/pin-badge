@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puro Papel Printings - Custom Pin Badges</title>
+    <style>
+        /* Light Gold Premium Background Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #faf5e6;
+            color: #222222;
+            line-height: 1.6;
+        }
+
+        /* Branding Header Cover */
+        .brand-header {
+            width: 100%;
+            display: block;
+            background-color: #ffffff;
+            border-bottom: 3px solid #dfb76c;
+        }
+        
+        .brand-header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Clean White & Gold Hero Section */
+        .hero {
+            background-color: #ffffff;
+            color: #222222;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 1px solid #f0e6d2;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: #bfa36b;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: #666666;
+        }
+
+        /* Gold Gradient Button */
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #f3d99d 0%, #d4af37 50%, #aa7c11 100%);
+            color: #ffffff;
+            padding: 14px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+        }
+
+        /* Main Container Layout */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 45px;
+            color: #bfa36b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 3px;
+            background-color: #d4af37;
+            margin: 12px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Showcase Grid Layout */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            margin-bottom: 50px;
+        }
+
+        /* Custom Pure White & Gold Cards */
+        .pin-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.1);
+            border: 1px solid #f0e6d2;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .pin-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
+        }
+
+        .pin-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .pin-info {
+            padding: 22px;
+            text-align: center;
+            background-color: #ffffff;
+            border-top: 1px solid #f9f6f0;
+        }
+
+        .pin-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #aa7c11;
+            font-weight: 700;
+        }
+
+        .pin-description {
+            font-size: 0.95rem;
+            color: #666666;
+        }
+
+        /* Highlight Info Banner for Delivery Details */
+        .delivery-notice {
+            background-color: #ffffff;
+            border: 1px solid #f3d99d;
+            border-left: 5px solid #d4af37;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.05);
+        }
+
+        .delivery-notice h4 {
+            color: #aa7c11;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .delivery-notice p {
+            color: #444444;
+            font-size: 1.05rem;
+        }
+
+        /* Premium White/Gold Footer */
+        footer {
+            background-color: #ffffff;
+            color: #bfa36b;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.95rem;
+            border-top: 1px solid #f0e6d2;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Brand Header Cover Image Section -->
+    <div class="brand-header">
+        <img src="inf.jpg" alt="Puro Papel Printings Cover Header">
+    </div>
+
+    <!-- Hero Promotional Section -->
+    <header class="hero">
+        <h1>Pin Badges Update!</h1>
+        <p>Your favorite size is finally back! Capture the moment and preserve it forever with premium customized button pins from Puro Papel Printings.</p>
+        <a href="https://m.me" target="_blank" class="cta-btn">Send Us a Message to Order</a>
+    </header>
+
+    <!-- Main Content Gallery Showcase -->
+    <main class="container">
+        <h2 class="section-title">Product Catalog & Updates</h2>
+        
+        <div class="gallery-grid">
+            
+            <!-- Graphic 1: Size Comparisons -->
+            <div class="pin-card">
+                <img src="pin.jpg" alt="Pin Badge Size Comparisons">
+                <div class="pin-info">
+                    <h3 class="pin-title">Size Comparison Guide</h3>
+                    <p class="pin-description">Find your perfect fit! Visual guide showcasing our available 25mm, 32mm, and 58mm sizing options in-hand.</p>
+                </div>
+            </div>
+
+            <!-- Graphic 2: Sizing Availability -->
+            <div class="pin-card">
+                <img src="pin2.jpg" alt="32mm Pin Badges Available Now">
+                <div class="pin-info">
+                    <h3 class="pin-title">Available Sizing Formats</h3>
+                    <p class="pin-description">Choose from 25mm, 32mm, or 58mm varieties featuring high-quality layouts with durable backings.</p>
+                </div>
+            </div>
+
+            <!-- Graphic 3: Delivery Schedule Sheets -->
+            <div class="pin-card">
+                <img src="pin3.jpg" alt="Customized Order Delivery Days Schedule">
+                <div class="pin-info">
+                    <h3 class="pin-title">Delivery Schedule Log</h3>
+                    <p class="pin-description">Keep track of operations! All customized item orders are processed safely according to our shipping slots.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Highlight Notice Section detailing delivery parameters -->
+        <div class="delivery-notice">
+            <h4>🚚 Delivery Window Schedule Reminder</h4>
+            <p>Please plan out your designs accordingly: Customized orders are delivered strictly on <strong>Wednesday</strong> and <strong>Friday</strong> only.</p>
+        </div>
+    </main>
+
+    <!-- Consistent Brand Footnote -->
+    <footer>
+        <p>Printing Memories. Preserving Moments. Beautifully Forever.</p>
+        <p style="margin-top: 8px; font-size: 0.8rem; color: #999999; font-weight: 400;">&copy; 2026 Puro Papel Printings. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
